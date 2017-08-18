@@ -2,7 +2,7 @@
 
     /******************************
     *
-    * Pw_database.php for PWCMS in 
+    * Pw_database.php for PWCMS
     *
     * Made by Quentin Le Bian
     * Contact   <quentin.lebian@pilotaweb.fr>

@@ -29,7 +29,7 @@ class Public_Controller extends PW_Controller
     $this->data['template'] = $this->getTemplate('public');
     $this->data['navbar_menu'] = $this->load->view('templates/'.$this->data['template'].'/parts/navbar_menu.php', NULL, TRUE);
     $this->data['sidebar_menu'] = '';
-    $this->data['page_title'] = 'PWCMS - Welcome';
+    $this->data['page_title'] = 'Bienvenue - ALB Impression';
   }
 
   protected function render($view = NULL, $template = 'public_master')

@@ -29,7 +29,9 @@ class Index extends Public_Controller {
 
 	public function index()
 	{
-		$this->render($this->data['render_path']. 'index');
+		$this->pw_builder->set('page', 'landing');
+		$this->data['items_content'] = $this->pw_builder->page();
+		$this->render($this->data['render_path'] . 'index');
 		//print_r($this->router->routes);
 		//$this->load->view('Welcome/welcome_message');
 	}

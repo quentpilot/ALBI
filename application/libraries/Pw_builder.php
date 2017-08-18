@@ -22,9 +22,25 @@ class Pw_builder {
     **/
 
     protected $pw = NULL; // current instance
+    // todo: class which return an instance of current item to build (following config)
 
     function __construct()
     {
         $this->pw = &get_instance();
+    }
+
+    public function set($type = 'article', $app = 'public')
+    {
+      return "item built !";
+    }
+
+    public function page()
+    {
+      return "item built !";
+    }
+
+    public function items($type = NULL)
+    {
+      return "item built !";
     }
 }
