@@ -3,8 +3,8 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Ven 30 Juin 2017 à 12:44
--- Version du serveur :  5.7.18-0ubuntu0.16.04.1
+-- Généré le :  Ven 18 Août 2017 à 17:18
+-- Version du serveur :  5.7.19-0ubuntu0.16.04.1
 -- Version de PHP :  7.0.18-0ubuntu0.16.04.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -447,7 +447,7 @@ CREATE TABLE `related_items` (
 
 INSERT INTO `related_items` (`id`, `item_id`, `ritem_id`) VALUES
 (1, 1, 0),
-(2, 2, 0);
+(2, 2, 1);
 
 -- --------------------------------------------------------
 
@@ -541,7 +541,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `email`, `password`, `salt`, `last_name`, `first_name`, `valid_email`, `token`, `city`, `country`, `phone`, `company`, `job`, `website`, `register_date`, `last_login`, `remember_me`, `max_forgot_pass`, `profile_img`, `navbar_color`, `status`) VALUES
-(39, 'PilotaWeb', 'quentin.lebian@pilotaweb.fr', '$2y$10$vLa3nSHfDx2nOnKfslSXf.PFC0Y9iSry0qQa1Tm2Gr.Abf4A.5sOK', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2017-06-25 21:46:25', '2017-06-28 21:39:13', 0, 3, 'default_avatar.png', NULL, 1),
+(39, 'PilotaWeb', 'quentin.lebian@pilotaweb.fr', '$2y$10$vLa3nSHfDx2nOnKfslSXf.PFC0Y9iSry0qQa1Tm2Gr.Abf4A.5sOK', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2017-06-25 21:46:25', '2017-06-30 11:57:57', 0, 3, 'default_avatar.png', NULL, 1),
 (40, 'quentpilot', 'quentin.lebian.pro@gmail.com', '$2y$10$7baN2gwLD6Av2aB8xsEMeOjVM.tfgJw9B9dp54Xvl9WHD.VwwW2/C', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2017-06-26 16:52:56', '2017-06-26 15:01:26', 0, 3, 'default_avatar.png', NULL, 0);
 
 -- --------------------------------------------------------
@@ -896,7 +896,7 @@ ALTER TABLE `easyweb_settings`
 -- AUTO_INCREMENT pour la table `items`
 --
 ALTER TABLE `items`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT pour la table `newsletter`
 --
@@ -916,7 +916,7 @@ ALTER TABLE `related_groups`
 -- AUTO_INCREMENT pour la table `related_items`
 --
 ALTER TABLE `related_items`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT pour la table `related_users`
 --
