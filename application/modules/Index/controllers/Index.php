@@ -29,9 +29,10 @@ class Index extends Public_Controller {
 
 	public function index()
 	{
-		$this->render($this->data['render_path']. 'index');
-		//print_r($this->router->routes);
-		//$this->load->view('Welcome/welcome_message');
+		if (!$this->pw_items_builder->set('page', 'landing'))
+			redirect('/');
+		$this->data['items_content'] = $this->pw_items_builder->build();
+		$this->render($this->data['render_path'] . 'index');
 	}
 
 	public function login()
