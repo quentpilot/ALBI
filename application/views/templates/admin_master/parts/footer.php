@@ -62,6 +62,15 @@
 <script src="<?= site_url('assets/admin/admin_master/plugins/jquery-datatable/extensions/export/buttons.html5.min.js') ?>"></script>
 <script src="<?= site_url('assets/admin/admin_master/plugins/jquery-datatable/extensions/export/buttons.print.min.js') ?>"></script>
 
+<!-- Jquery Validation Plugin Css -->
+<script src="<?= site_url('assets/admin/admin_master/plugins/jquery-validation/jquery.validate.js') ?>"></script>
+
+<!-- JQuery Steps Plugin Js -->
+<script src="<?= site_url('assets/admin/admin_master/plugins/jquery-steps/jquery.steps.js') ?>"></script>
+
+<!-- Sweet Alert Plugin Js -->
+<script src="<?= site_url('assets/admin/admin_master/plugins/sweetalert/sweetalert.min.js') ?>"></script>
+
 <!-- Custom Js -->
 <!--<script src="<?= site_url('assets/admin/admin_master/js/admin.js') ?>"></script>
 <script src="<?= site_url('assets/admin/admin_master/js/pages/tables/jquery-datatable.js') ?>"></script>-->

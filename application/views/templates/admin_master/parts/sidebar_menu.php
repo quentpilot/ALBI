@@ -103,19 +103,19 @@
                                 <a href="<?= site_url('admin/pilotaweb/$1') ?>">Site Actuel</a>
                             </li>
                             <li>
-                                <a href="<?= site_url('admin/pilotaweb/landing') ?>">Landing</a>
+                                <a href="<?= site_url('admin/pilotaweb/app/landing/index') ?>">Landing</a>
                             </li>
                             <li>
-                                <a href="<?= site_url('admin/pilotaweb/vitrine') ?>">Vitrine</a>
+                                <a href="<?= site_url('admin/pilotaweb/app/vitrine/index') ?>">Vitrine</a>
                             </li>
                             <li>
-                                <a href="<?= site_url('admin/pilotaweb/blog') ?>">Blog</a>
+                                <a href="<?= site_url('admin/pilotaweb/app/blog/index') ?>">Blog</a>
                             </li>
                             <li>
-                                <a href="<?= site_url('admin/pilotaweb/shop') ?>">E-commerce</a>
+                                <a href="<?= site_url('admin/pilotaweb/app/shop/index') ?>">E-commerce</a>
                             </li>
                             <li>
-                                <a href="<?= site_url('admin/pilotaweb/settings') ?>">Paramètres</a>
+                                <a href="<?= site_url('admin/pilotaweb/app/settings/index') ?>">Paramètres</a>
                             </li>
                         </ul>
                     </li>
