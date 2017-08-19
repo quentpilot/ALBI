@@ -70,6 +70,8 @@ class Pw_items_builder {
         return false;
       
       $this->config['app'] = $app;
+      $app_id = $this->pw->pw_database->get('apps', "slug = 'landing'", 'id', 1);
+      $this->config['app_id'] = $app_id['id'];
       $this->config['type'] = $type;
       $this->config['is_object'] = $as_object;
       return true;
@@ -85,11 +87,40 @@ class Pw_items_builder {
 
     public function landing_builder($page_id = 0)
     {
+      // get all items which is of landing app type
+      // then get data and loop to each item type to built them
+      $items = $this->get();
+      if (!$items)
+        return NULL;
+      //debug($items);
       $string = "";
       $string .= $this->pw->load->view('templates/public_master/render/article/header/header', NULL, true);
       $string .= $this->pw->load->view('templates/public_master/render/article/image/icon', NULL, true);
       $string .= $this->pw->load->view('templates/public_master/render/article/custom/custom', NULL, true);
       return $string;
+    }
+
+    public function get()
+    {
+      if (is_null($this->config['app']) && $this->config['app_id'] > 0)
+          return false;
+
+      $req = $this->pw->db->select()
+                  ->from('items_apps')
+                  ->where('app_id', $this->config['app_id'])
+                  ->join('items_category', 'items_category.item_id = items_apps.item_id')
+                  ->join('items_groups', 'items_groups.item_id = items_apps.item_id')
+                  ->join('items_style', 'items_style.item_id = items_apps.item_id')
+                  ->join('items', 'items_apps.item_id = items.id')
+                  ->where('items.status = 1')
+                  ->order_by('items.position')
+                  ->get();
+
+      if (!($nb = $req->num_rows()))
+          return false;
+
+      $items = $req->result_array();
+      return $items;
     }
 
     public function items($type = NULL)

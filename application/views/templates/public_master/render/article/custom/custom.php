@@ -9,7 +9,7 @@
           <p><i class="fa fa-code"></i>Quis autem velis reprehenderit et quis voluptate velit esse quam.</p>
         </div>
         <div class="col-md-6 wow fadeInRight" data-wow-delay="0.6s">
-          <img src="images/software-img.png" class="img-responsive" alt="feature img">
+          <img src="<?= site_url('assets/public/public_master/images/software-img.png') ?>" class="img-responsive" alt="feature img">
         </div>
       </div>
     </div>

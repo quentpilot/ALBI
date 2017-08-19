@@ -63,7 +63,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-            <img src="images/software-img.png" class="img-responsive" alt="feature img">
+            <img src="<?= site_url('assets/public/public_master/images/software-img.png') ?>" class="img-responsive" alt="feature img">
           </div>
           <div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
             <h2 class="text-uppercase">More of Your Software</h2>
@@ -146,7 +146,7 @@
             <button class="btn btn-primary text-uppercase"><i class="fa fa-download"></i> Download</button>
           </div>
           <div class="col-md-6 wow fadeInRight" data-wow-delay="0.6s">
-            <img src="images/software-img.png" class="img-responsive" alt="feature img">
+            <img src="<?= site_url('assets/public/public_master/images/software-img.png') ?>" class="img-responsive" alt="feature img">
           </div>
         </div>
       </div>
