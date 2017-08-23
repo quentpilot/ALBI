@@ -71,6 +71,15 @@
 <!-- Sweet Alert Plugin Js -->
 <script src="<?= site_url('assets/admin/admin_master/plugins/sweetalert/sweetalert.min.js') ?>"></script>
 
+<!-- Dropzone Plugin Js -->
+<script src="<?= site_url('assets/admin/admin_master/plugins/dropzone/dropzone.js') ?>"></script>
+
+<!-- Multi Select Plugin Js -->
+<script src="<?= site_url('assets/admin/admin_master/plugins/multi-select/js/jquery.multi-select.js') ?>"></script>
+
+<!-- Select Plugin Js -->
+<script src="<?= site_url('assets/admin/admin_master/plugins/bootstrap-select/js/bootstrap-select.js') ?>"></script>
+
 <!-- Custom Js -->
 <!--<script src="<?= site_url('assets/admin/admin_master/js/admin.js') ?>"></script>
 <script src="<?= site_url('assets/admin/admin_master/js/pages/tables/jquery-datatable.js') ?>"></script>-->

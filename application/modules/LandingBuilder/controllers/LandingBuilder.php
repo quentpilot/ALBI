@@ -47,7 +47,6 @@ class LandingBuilder extends Builder_Controller {
 	{
 		$this->data['page_title'] = 'PWCMS - Nouveau site';
 		$this->data['module_title'] = 'Création d\'une landing page.';
-		//$this->render($this->data['render_path'] . 'dashboard');
 		$this->render($this->data['render_path'] . 'forms/new/new.php');
 	}
 }

@@ -5,7 +5,7 @@
     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <div class="info-box bg-pink hover-expand-effect">
             <div class="icon">
-                <a href="<?= site_url('admin/pilotaweb/app/landing/new') ?>" title="Créer un nouveau site">
+                <a href="<?= site_url('admin/pilotaweb/app/landing/new') ?>" title="Nouveau site">
                     <i class="material-icons">add_to_queue</i>
                 </a>
             </div>
@@ -18,8 +18,8 @@
     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <div class="info-box bg-cyan hover-expand-effect">
             <div class="icon">
-                <a href="<?= site_url('admin/pilotaweb/app/vitrine/new') ?>" title="Créer un nouveau site">
-                    <i class="material-icons">add_to_queue</i>
+                <a href="<?= site_url('admin/pilotaweb/app/vitrine/index') ?>" title="Aperçu du site">
+                    <i class="material-icons">laptop</i>
                 </a>
             </div>
             <div class="content">
@@ -31,8 +31,8 @@
     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <div class="info-box bg-light-green hover-expand-effect">
             <div class="icon">
-                <a href="<?= site_url('admin/pilotaweb/app/shop/new') ?>" title="Créer un nouveau site">
-                    <i class="material-icons">add_to_queue</i>
+                <a href="<?= site_url('admin/pilotaweb/app/shop/index') ?>" title="Aperçu du site">
+                    <i class="material-icons">laptop</i>
                 </a>
             </div>
             <div class="content">
@@ -44,8 +44,8 @@
     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <div class="info-box bg-orange hover-expand-effect">
             <div class="icon">
-                <a href="<?= site_url('admin/pilotaweb/app/blog/new') ?>" title="Créer un nouveau site">
-                    <i class="material-icons">add_to_queue</i>
+                <a href="<?= site_url('admin/pilotaweb/app/blog/index') ?>" title="Aperçu du site">
+                    <i class="material-icons">laptop</i>
                 </a>
             </div>
             <div class="content">
@@ -56,6 +56,4 @@
     </div>
 </div>
 <!-- #END# Widgets -->
-
-<?php //$this->load->view("templates/$template/LandingBuilder/forms/new/new.php"); ?>
         

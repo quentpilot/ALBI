@@ -50,7 +50,17 @@
                     <div id="menu6" class="tab-pane fade">
                         <?php $this->load->view("templates/$template/LandingBuilder/forms/new/new-settings.php"); ?>
                     </div>
-                  </div>
+                </div>
+
+                <ul class="nav nav-tabs">
+                    <li><a data-toggle="pill" href="#home"><h5>Aperçu</h5></a></li>
+                    <li><a data-toggle="pill" href="#menu1"><h5>Navigation</h5></a></li>
+                    <li><a data-toggle="pill" href="#menu2"><h5>En-tête</h5></a></li>
+                    <li><a data-toggle="pill" href="#menu3"><h5>Contenu principal</h5></a></li>
+                    <li><a data-toggle="pill" href="#menu4"><h5>Pied de page</h5></a></li>
+                    <li><a data-toggle="pill" href="#menu5"><h5>Informations complémentaires</h5></a></li>
+                    <li><a data-toggle="pill" href="#menu6"><h5>Paramètres</h5></a></li>
+                </ul>
             </div>
         </div>
     </div>

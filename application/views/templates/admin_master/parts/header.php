@@ -35,6 +35,15 @@
 <!-- Sweet Alert Css -->
 <link href="<?= site_url('assets/admin/admin_master/plugins/sweetalert/sweetalert.css') ?>" rel="stylesheet" />
 
+<!-- Dropzone Css -->
+<link href="<?= site_url('assets/admin/admin_master/plugins/dropzone/dropzone.css') ?>" rel="stylesheet">
+
+<!-- Multi Select Css -->
+<link href="<?= site_url('assets/admin/admin_master/plugins/multi-select/css/multi-select.css') ?>" rel="stylesheet">
+
+<!-- Bootstrap Select Css -->
+<link href="<?= site_url('assets/admin/admin_master/plugins/bootstrap-select/css/bootstrap-select.css') ?>" rel="stylesheet" />
+
 <!-- Custom Css -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 

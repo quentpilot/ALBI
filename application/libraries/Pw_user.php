@@ -34,6 +34,16 @@ class Pw_user extends PW_Controller {
 		return false;
 	}
 
+	public function isRight($level = 0)
+	{
+		$lvl = 2;
+		if ($level)
+			$lvl = $level;
+		if ($_SESSION['user']['groupId'] >= $lvl)
+			return true;
+		return false;
+	}
+
 	public function inGroup($groupname = 'admin')
 	{
 		if (!$this->isLoged())
