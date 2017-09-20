@@ -19,47 +19,60 @@
             </div>
             <div class="body">
                 <ul class="nav nav-tabs">
-                    <li class="active"><a data-toggle="pill" href="#home"><h5>Aperçu</h5></a></li>
-                    <li><a data-toggle="pill" href="#menu1"><h5>Navigation</h5></a></li>
-                    <li><a data-toggle="pill" href="#menu2"><h5>En-tête</h5></a></li>
-                    <li><a data-toggle="pill" href="#menu3"><h5>Contenu principal</h5></a></li>
-                    <li><a data-toggle="pill" href="#menu4"><h5>Pied de page</h5></a></li>
-                    <li><a data-toggle="pill" href="#menu5"><h5>Informations complémentaires</h5></a></li>
-                    <li><a data-toggle="pill" href="#menu6"><h5>Paramètres</h5></a></li>
+                    <li class="active"><a data-toggle="pill" href="#menu1"><h5>Aperçu</h5></a></li>
+                    <li><a data-toggle="pill" href="#menu2"><h5>Navigation</h5></a></li>
+                    <li><a data-toggle="pill" href="#menu3"><h5>En-tête</h5></a></li>
+                    <li><a data-toggle="pill" href="#menu4"><h5>Contenu principal</h5></a></li>
+                    <li><a data-toggle="pill" href="#menu5"><h5>Pied de page</h5></a></li>
+                    <li><a data-toggle="pill" href="#menu6"><h5>Informations complémentaires</h5></a></li>
+                    <li><a data-toggle="pill" href="#menu7"><h5>Paramètres</h5></a></li>
                 </ul>
                   
                 <div class="tab-content">
-                    <div id="home" class="tab-pane fade in active">
+
+                              <!--<?= validation_errors(
+                                '<div class="container-fluid">
+                                    <div class="alert alert-info alert-dismissible text-center" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h4>',
+                                        '</h4>
+                                    </div>
+                                </div>') ?>-->
+
+                    <div id="menu1" class="tab-pane fade in active">
                         <?php $this->load->view("templates/$template/LandingBuilder/forms/new/new-preview.php"); ?>
                     </div>
-                    <div id="menu1" class="tab-pane fade">
+                    <div id="menu2" class="tab-pane fade">
                         <?php $this->load->view("templates/$template/LandingBuilder/forms/new/new-nav.php"); ?>
                     </div>
-                    <div id="menu2" class="tab-pane fade">
+                    <div id="menu3" class="tab-pane fade">
                         <?php $this->load->view("templates/$template/LandingBuilder/forms/new/new-header.php"); ?>
                     </div>
-                    <div id="menu3" class="tab-pane fade">
+                    <div id="menu4" class="tab-pane fade">
                         <?php $this->load->view("templates/$template/LandingBuilder/forms/new/new-content.php"); ?>
                     </div>
-                    <div id="menu4" class="tab-pane fade">
+                    <div id="menu5" class="tab-pane fade">
                         <?php $this->load->view("templates/$template/LandingBuilder/forms/new/new-footer.php"); ?>
                     </div>
-                    <div id="menu5" class="tab-pane fade">
+                    <div id="menu6" class="tab-pane fade">
                         <?php $this->load->view("templates/$template/LandingBuilder/forms/new/new-info.php"); ?>
                     </div>
-                    <div id="menu6" class="tab-pane fade">
+                    <div id="menu7" class="tab-pane fade">
                         <?php $this->load->view("templates/$template/LandingBuilder/forms/new/new-settings.php"); ?>
                     </div>
+                    
                 </div>
 
                 <ul class="nav nav-tabs">
-                    <li><a data-toggle="pill" href="#home"><h5>Aperçu</h5></a></li>
-                    <li><a data-toggle="pill" href="#menu1"><h5>Navigation</h5></a></li>
-                    <li><a data-toggle="pill" href="#menu2"><h5>En-tête</h5></a></li>
-                    <li><a data-toggle="pill" href="#menu3"><h5>Contenu principal</h5></a></li>
-                    <li><a data-toggle="pill" href="#menu4"><h5>Pied de page</h5></a></li>
-                    <li><a data-toggle="pill" href="#menu5"><h5>Informations complémentaires</h5></a></li>
-                    <li><a data-toggle="pill" href="#menu6"><h5>Paramètres</h5></a></li>
+                    <li><a data-toggle="pill" href="#menu1"><h5>Aperçu</h5></a></li>
+                    <li><a data-toggle="pill" href="#menu2"><h5>Navigation</h5></a></li>
+                    <li><a data-toggle="pill" href="#menu3"><h5>En-tête</h5></a></li>
+                    <li><a data-toggle="pill" href="#menu4"><h5>Contenu principal</h5></a></li>
+                    <li><a data-toggle="pill" href="#menu5"><h5>Pied de page</h5></a></li>
+                    <li><a data-toggle="pill" href="#menu6"><h5>Informations complémentaires</h5></a></li>
+                    <li><a data-toggle="pill" href="#menu7"><h5>Paramètres</h5></a></li>
                 </ul>
             </div>
         </div>

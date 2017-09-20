@@ -59,6 +59,24 @@ class Pw_forms_builder {
         $this->pw = &get_instance();
     }
 
+    public function format_post($form_type = NULL)
+    {
+      $data = $_POST;
+      $tab = array();
+      
+      if (is_null($form_type))
+        return false;
+      unset($data["submit_$form_type"]);
+      $tab[$form_type] = array();
+      /*foreach ($data as $key => $value) 
+      {
+        array_push($tab, array($key => $value));
+      }*/
+      $num = count($tab[$form_type]);
+      $tab[$form_type] = array($num, $data);
+      return $tab;
+    }
+
     public function set($type = 'article', $app = 'public', $as_object = false)
     {
       $app_type = array('admin', 'public', 'landing');

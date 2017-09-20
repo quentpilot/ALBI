@@ -28,6 +28,16 @@
 		                            <input type="text" id="title" name="title" class="form-control" placeholder="Titre">
 		                        </div>
 		                    </div>
+		                    <?= form_error('title',
+                                '<div class="container-fluid">
+                                    <div class="alert alert-warning alert-dismissible text-center" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h5>',
+                                        '</h5>
+                                    </div>
+                                </div>') ?>
 		                </div>
 		                <div class="col-sm-8 col-sm-offset-2">
 		                    <div class="input-group input-group-lg">
@@ -38,14 +48,34 @@
 		                            <input type="text" id="subtitle" name="subtitle" class="form-control" placeholder="Sous-titre">
 		                        </div>
 		                    </div>
+		                    <?= form_error('subtitle',
+                                '<div class="container-fluid">
+                                    <div class="alert alert-warning alert-dismissible text-center" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h5>',
+                                        '</h5>
+                                    </div>
+                                </div>') ?>
 		                </div>
 	                    <div class="col-sm-10 col-sm-offset-1">
                             <div class="form-group">
                                 <div class="form-line">
-                                    <textarea rows="3" id="content" name="content" class="form-control no-resize" 
+                                    <textarea rows="3" id="content" name="content" class="form-control no-resize input-lg" 
                                     placeholder="Contenu de l'article"></textarea>
                                 </div>
                             </div>
+                            <?= form_error('content',
+                                '<div class="container-fluid">
+                                    <div class="alert alert-warning alert-dismissible text-center" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h5>',
+                                        '</h5>
+                                    </div>
+                                </div>') ?>
                         </div>
                         <br>
                         <div class="col-sm-4">
@@ -91,7 +121,7 @@
                         </div>
 	                </div>
                     
-                    <button class="btn btn-info btn-lg btn-block waves-effect" type="submit"><i class="fa fa-send-o fa-2x text-bold"></i> 
+                    <button class="btn btn-info btn-lg btn-block waves-effect" type="submit" name="submit_content"><i class="fa fa-send-o fa-2x text-bold"></i> 
                     	<b>Enregistrer les informations</b>
                     </button>
                 </form>

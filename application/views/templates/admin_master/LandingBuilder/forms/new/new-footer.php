@@ -27,10 +27,40 @@
                                     placeholder="&copy; Copyright du site">&copy;</textarea>
                                 </div>
                             </div>
+                            <?= form_error('content',
+                                '<div class="container-fluid">
+                                    <div class="alert alert-warning alert-dismissible text-center" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h5>',
+                                        '</h5>
+                                    </div>
+                                </div>') ?>
+                        </div>
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-addon">
+                                    <i class="material-icons">email</i>
+                                </span>
+                                <div class="form-line">
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="Email de contact">
+                                </div>
+                            </div>
+                            <?= form_error('email',
+                                '<div class="container-fluid">
+                                    <div class="alert alert-warning alert-dismissible text-center" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h5>',
+                                        '</h5>
+                                    </div>
+                                </div>') ?>
                         </div>
 	                </div>
                     
-                    <button class="btn btn-info btn-lg btn-block waves-effect" type="submit"><i class="fa fa-send-o fa-2x text-bold"></i> 
+                    <button class="btn btn-info btn-lg btn-block waves-effect" type="submit" name="submit_footer"><i class="fa fa-send-o fa-2x text-bold"></i> 
                     	<b>Enregistrer les informations</b>
                     </button>
                 </form>

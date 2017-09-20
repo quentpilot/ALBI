@@ -99,9 +99,6 @@
                             <span>PilotAWeb</span>
                         </a>
                         <ul class="ml-menu">
-                        	<li>
-                                <a href="<?= site_url('admin/pilotaweb/$1') ?>">Site Actuel</a>
-                            </li>
                             <li>
                                 <a href="<?= site_url('admin/pilotaweb/app/landing/index') ?>">Landing</a>
                             </li>
@@ -113,6 +110,9 @@
                             </li>
                             <li>
                                 <a href="<?= site_url('admin/pilotaweb/app/shop/index') ?>">E-commerce</a>
+                            </li>
+                            <li>
+                                <a href="<?= site_url('admin/pilotaweb/app/items/index') ?>">Items Builder</a>
                             </li>
                             <li>
                                 <a href="<?= site_url('admin/pilotaweb/app/settings/index') ?>">Paramètres</a>
@@ -181,7 +181,7 @@
                                 <a href="<?= site_url('admin/plugins/download') ?>">Télécharger</a>
                             </li>
                             <li>
-                                <a href="<?= site_url('admin/plugins/more') ?>">Plus</a>
+                                <a href="<?= site_url('admin/plugins/more') ?>">Avancé</a>
                             </li>
                             <li>
                                 <a href="<?= site_url('admin/templates/settings') ?>">Paramètres</a>
@@ -210,7 +210,7 @@
                                 <a href="<?= site_url('admin/templates/download') ?>">Télécharger</a>
                             </li>
                             <li>
-                                <a href="<?= site_url('admin/templates/more') ?>">Plus</a>
+                                <a href="<?= site_url('admin/templates/more') ?>">Avancé</a>
                             </li>
                             <li>
                                 <a href="<?= site_url('admin/templates/settings') ?>">Paramètres</a>
@@ -234,7 +234,7 @@
                                 <a href="<?= site_url('admin/plugins/download') ?>">Télécharger</a>
                             </li>
                             <li>
-                                <a href="<?= site_url('admin/plugins/more') ?>">Plus</a>
+                                <a href="<?= site_url('admin/plugins/more') ?>">Avancé</a>
                             </li>
                             <li>
                                 <a href="<?= site_url('admin/plugins/settings') ?>">Paramètres</a>
@@ -305,6 +305,43 @@
                                     </li>
                                     <li>
                                         <a href="<?= site_url('admin/doc/admins') ?>">Coté Administrateur</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="menu-toggle">
+                                    <span>Modules du Menu</span>
+                                </a>
+                                <ul class="ml-menu">
+                                    <li>
+                                        <a href="<?= site_url('admin/doc/about') ?>">A propos</a>
+                                    </li>
+                                    <li>
+                                        <a href="<?= site_url('admin/doc/who') ?>">Mon Contenu</a>
+                                    </li>
+                                    <li>
+                                        <a href="<?= site_url('admin/doc/who') ?>">PilotaWeb</a>
+                                    </li>
+                                    <li>
+                                        <a href="<?= site_url('admin/doc/how') ?>">Utilisateurs</a>
+                                    </li>
+                                    <li>
+                                        <a href="<?= site_url('admin/doc/clients') ?>">Ma Messagerie</a>
+                                    </li>
+                                    <li>
+                                        <a href="<?= site_url('admin/doc/admins') ?>">Mes Outils</a>
+                                    </li>
+                                    <li>
+                                        <a href="<?= site_url('admin/doc/who') ?>">Mon Planning</a>
+                                    </li>
+                                    <li>
+                                        <a href="<?= site_url('admin/doc/who') ?>">Mes Templates</a>
+                                    </li>
+                                    <li>
+                                        <a href="<?= site_url('admin/doc/who') ?>">Mes Plugins</a>
+                                    </li>
+                                    <li>
+                                        <a href="<?= site_url('admin/doc/who') ?>">Paramètres</a>
                                     </li>
                                 </ul>
                             </li>

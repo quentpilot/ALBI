@@ -45,8 +45,33 @@ class LandingBuilder extends Builder_Controller {
 
 	public function new()
 	{
+		$this->load->model('landingbuilder_model');
+		// valid forms
+		$form_sent = $this->landingbuilder_model->form_type;
+		$form_message = array();
+		
+		if ($this->form_validation->run('admin_edit_landing_page_builder_'.$form_sent))
+		{
+			if (!$this->landingbuilder_model->set())
+				$form_message = $this->landingbuilder_model->messages;
+			elseif (!$this->landingbuilder_model->new())
+				$form_message = $this->landingbuilder_model->messages;
+			else
+				$form_message = $this->landingbuilder_model->messages;
+		}
+
+		$this->session->set_flashdata($form_message);
+
+		// load view
 		$this->data['page_title'] = 'PWCMS - Nouveau site';
 		$this->data['module_title'] = 'Création d\'une landing page.';
+		$this->render($this->data['render_path'] . 'forms/new/new.php');
+	}
+
+	public function edit()
+	{
+		$this->data['page_title'] = 'PWCMS - Edition du site';
+		$this->data['module_title'] = 'Edition d\'une landing page.';
 		$this->render($this->data['render_path'] . 'forms/new/new.php');
 	}
 }

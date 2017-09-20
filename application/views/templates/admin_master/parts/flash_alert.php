@@ -11,6 +11,7 @@ if($this->session->flashdata('message') && !$this->session->flashdata('done'))
       </button>
       <p>
           <?php echo $this->session->flashdata('message');?>
+          
       </p>
     </div>
   </div>

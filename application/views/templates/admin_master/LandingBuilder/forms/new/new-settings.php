@@ -65,7 +65,7 @@
 		                </div>
 	                </div>
                     
-                    <button class="btn btn-info btn-lg btn-block waves-effect" type="submit"><i class="fa fa-send-o fa-2x text-bold"></i> 
+                    <button class="btn btn-info btn-lg btn-block waves-effect" type="submit" name="submit_settings"><i class="fa fa-send-o fa-2x text-bold"></i> 
                     	<b>Enregistrer les informations</b>
                     </button>
                 </form>

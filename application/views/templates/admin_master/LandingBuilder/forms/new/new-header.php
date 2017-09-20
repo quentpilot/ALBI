@@ -28,6 +28,16 @@
 		                            <input type="text" id="title" name="title" class="form-control" placeholder="Titre">
 		                        </div>
 		                    </div>
+		                    <?= form_error('title',
+                                '<div class="container-fluid">
+                                    <div class="alert alert-warning alert-dismissible text-center" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h5>',
+                                        '</h5>
+                                    </div>
+                                </div>') ?>
 		                </div>
 	                    <div class="col-sm-10 col-sm-offset-1">
                             <div class="form-group">
@@ -36,6 +46,16 @@
                                     placeholder="Description du site, commerce, produit, ..."></textarea>
                                 </div>
                             </div>
+                            <?= form_error('subtitle',
+                                '<div class="container-fluid">
+                                    <div class="alert alert-warning alert-dismissible text-center" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <h5>',
+                                        '</h5>
+                                    </div>
+                                </div>') ?>
                         </div>
                         <br>
                         <div class="col-sm-6">
@@ -65,7 +85,7 @@
 		                </div>
 	                </div>
                     
-                    <button class="btn btn-info btn-lg btn-block waves-effect" type="submit"><i class="fa fa-send-o fa-2x text-bold"></i> 
+                    <button class="btn btn-info btn-lg btn-block waves-effect" type="submit" name="submit_header"><i class="fa fa-send-o fa-2x text-bold"></i> 
                     	<b>Enregistrer les informations</b>
                     </button>
                 </form>
